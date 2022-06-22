@@ -1,0 +1,393 @@
+:root{
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --primary-white-color: #FFFFFF;
+    --accent-color: #2196F3;
+
+    /* fonts */
+    --main-font-famaly: Roboto, sans-serif;
+    --second-font-famaly: Raleway, sans-serif;
+}
+
+
+/* reset */
+
+h1,h2,h3,p{
+    margin: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+body{
+font-family: var(--main-font-famaly);
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+background-color: var(--primary-white-color);
+
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* header */
+
+.container-header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.logo{
+font-family: var(--second-font-famaly);
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: #000000;
+margin-right: 93px;
+}
+
+
+/* comooon styles start */
+.link{
+text-decoration: none;
+}
+.list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* header section */
+
+.header-nav{
+    display: flex;
+    align-items: center
+}
+
+.header-list{
+    display: flex;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact-list{
+    margin-left: auto;
+}
+.contact-item{
+    margin-left: 50px;
+}
+
+.header-link,
+.header-contact{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.header-contact{
+color: var(--secondary-text-color);
+}
+
+/* hero section */
+
+
+
+.container-hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero{
+background-color: #2F303A;
+}
+.hero-title{
+font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;
+   
+}
+
+.btn{
+display: block;
+font-family: inherit;    
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.06em;
+cursor: pointer;
+background-color: transparent;
+border: none;
+color: var(--primary-white-color);
+background-color: var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+padding: 10px 32px;
+margin-left: auto;
+margin-right: auto;
+}
+.btn:hover,
+.btn:focus {
+ background-color: var(--accent-color);
+ color: var(--primary-white-color);
+}
+
+/* section work */
+
+
+.container-work{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+.item-work{
+width: 270px;
+}
+       
+.list-work{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.title-list{
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+}
+
+.text-work{
+line-height: 1.71;
+color: var(--secondary-text-color);
+}
+
+/* section about */
+ 
+.list-about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-section{
+
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        margin-bottom: 50px;
+        padding-top: 94px;
+        margin-bottom: 50px;
+}
+
+.img-about{
+    padding-bottom: 94px;
+}
+
+/* section team */
+
+.section-team{
+    background-color: #F5F4FA;
+}
+
+.list-team{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-team{
+    margin-bottom: 30px;
+}
+
+.title-name{
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        margin-bottom: 10px;
+}
+
+
+
+.profession{
+        font-size: 16px;
+        line-height: 1.18;
+        text-align: center;
+        padding-bottom: 124px;
+        color: var(--secondary-text-color);
+}
+
+/* footer-section */
+.footer-section{
+    background-color: #2F303A;
+}
+
+
+.logo-white{
+    color: var(--primary-white-color);
+}
+
+.logo-footer{
+    display: inline-block;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+
+    
+address{
+    font-style: normal;
+}
+
+.footer-item:not(:last-child){
+margin-bottom: 10px;
+margin-left: 0;
+}
+
+.item-pad{
+    padding-bottom: 60px;
+    margin-left: 0;
+}
+/* section portfolio */
+
+.container-portfolio{
+    padding-top: 98px;
+    padding-bottom: 90px;
+}
+
+.list-button{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center
+   
+}
+
+.item-button:not(:last-child){
+margin-right: 8px;
+}
+
+.card-set{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+} 
+
+.card-set-item{
+    flex-basis: calc((100% - 30px * 3) / 3);
+    margin: 15px;  
+}
+
+.wrapper{
+    padding-bottom: 20px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
+.btn-portfolio{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.87;
+     padding: 6px 22px;
+     border-radius: 4px;
+     letter-spacing: 0.06em;
+     cursor: pointer;
+     background-color: transparent;
+     border: none;
+     color: var(--primary-text-color);
+     background-color: #F5F4FA;
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus{
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+
+.title-portfolio{
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        margin-bottom: 5px;
+    
+        color: #212121;
+}
+
+.text-portfolio{
+        font-size: 16px;
+        line-height: 1.8;
+        letter-spacing: 0.03em;
+        margin-bottom: 20px;
+    
+        color: var(--primary-text-color);
+}
+
+.address{
+font-style: normal;
+}
+
+.address-link{
+    color: var(--primary-white-color);
+}
+
+.footer-address {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--primary-white-color);
+}
+
+.footer-section .logo{
+color: var(--primary-white-color);
+}
+
+.footer-section .header-contact{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-contact:hover,
+.header-contact:focus,
+.accent,
+.current {
+    color: var(--accent-color);
+}
+
+.btn-portfolio.active{
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
