@@ -56,15 +56,15 @@ line-height: 1.19;
 letter-spacing: 0.03em;
 color: #000000;
 margin-right: 93px;
-padding-top: 32px;
-padding-bottom: 32px;
-}
+    }
 
 
 /* comooon styles start */
+
 .link{
 text-decoration: none;
 }
+
 .list{
     list-style: none;
     margin: 0;
@@ -83,18 +83,22 @@ border-bottom: 1px solid #ECECEC;;
 .header-list{
     display: flex;
 }
+ 
 
 
 .header-item:not(:last-child) {
     margin-right: 50px;
 }
 
-.contact-list{
-    margin-left: auto;
+.item-contact{
+    margin-right: 330px;
 }
-.contact-item{
-    margin-left: 50px;
+
+
+.contact-item:not(:last-child){
+    margin-right: 50px;
 }
+
 
 .header-link,
 .header-contact{
@@ -102,10 +106,22 @@ border-bottom: 1px solid #ECECEC;;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+        display: block;
+            padding: 32px 0;
+        
 }
 
 .header-contact{
 color: var(--secondary-text-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-contact:hover,
+.header-contact:focus,
+.accent,
+.current {
+    color: var(--accent-color);
 }
 
 /* hero section */
@@ -269,6 +285,7 @@ address{
     font-style: normal;
 }
 
+
 .footer-item:not(:last-child){
 margin-bottom: 10px;
 margin-left: 0;
@@ -277,13 +294,32 @@ margin-left: 0;
 .item-pad{
     margin-left: 0;
 }
+
+
+.footer-contact {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.footer-contact {
+    color: var(--secondary-text-color);
+}
+
+.footer-contact:hover,
+.footer-contact:focus,
+.accent,
+.current {
+    color: var(--accent-color);
+}
+
 /* section portfolio */
 
 .list-button{
     display: flex;
     margin-bottom: 50px;
-    justify-content: center
-   
+    justify-content: center   
 }
 
 .item-button:not(:last-child){
@@ -368,14 +404,6 @@ color: var(--primary-white-color);
     color: rgba(255, 255, 255, 0.6);
 }
 
-.header-link:hover,
-.header-link:focus,
-.header-contact:hover,
-.header-contact:focus,
-.accent,
-.current {
-    color: var(--accent-color);
-}
 
 .btn-portfolio.active{
     background-color: var(--accent-color);
